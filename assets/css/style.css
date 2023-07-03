@@ -160,3 +160,43 @@ main button:hover {
     text-align: center;
     font-size: 1rem;
 }
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 10% 0 10% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .cabecalho img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .sobre {
+        align-items: start;
+    }
+
+    .nome {
+        font-size: 2.5rem;
+    }
+
+    .find {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 80%;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+}
