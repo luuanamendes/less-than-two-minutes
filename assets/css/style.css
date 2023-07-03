@@ -1,7 +1,13 @@
 :root {
+    --color-light: #FFF;
     --color-ligth-100: #DDDDDD;
     --color-ligth-200: #DDDDDD50;
+    --color-dark-700: #1E1E1E50;
+    --color-dark-800: #1E1E1E;
     --color-dark-900: #181818;
+    
+    --color-blue-100: #95ade9;
+    --color-blue-700: #46578720;
     --color-blue-800: #202E55;
     --color-blue-900: #202E5510;
     --color-yellow-500: #fff000;
@@ -79,7 +85,7 @@ body {
 }
 
 input:checked+.box-btn {
-    background-color: var(--color-ligth-200);
+    background-color: var(--color-dark-800);
 }
 
 input:checked+.box-btn:before {
@@ -140,7 +146,7 @@ img {
     gap: 1rem;
 }
 
-main button:hover {
+.conteudo .btn:hover {
     transition: 0.2s;
     border-color: var(--color-blue-800);
     background-color: var(--color-blue-900);
@@ -159,6 +165,37 @@ main button:hover {
     color: #202E55;
     text-align: center;
     font-size: 1rem;
+}
+
+.light#body {
+    background-color: var(--color-light);
+    color: var(--color-dark-800);
+}
+
+.light#body .find a {
+    color: var(--color-dark-800);
+}
+
+.light#body .btn {
+    border: 1px solid var(--color-dark-700);
+}
+
+.light#body .btn:hover {
+    transition: 0.2s;
+    border-color: var(--color-blue-800);
+    background-color: var(--color-blue-700);
+}
+
+.light#body .titulo {
+    color: var(--color-dark-800);
+}
+
+.light#body .desc {
+    color: var(--color-dark-800);
+}
+
+.light#body .rodape{
+    color: var(--color-blue-100) ;
 }
 
 @media (max-width: 600px) {
